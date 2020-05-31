@@ -76,7 +76,6 @@ public class Capitulo3 {
         
         Cliente cliente2 = new Cliente();
         
-        cliente2.
         
     }
     
