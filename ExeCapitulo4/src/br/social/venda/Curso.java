@@ -2,15 +2,26 @@
 package br.social.venda;
 
 import br.social.estoque.Produto;
+import java.util.Date;
 /**
  *
  * @author Alfredo
  */
 public class Curso extends Produto{
+    {
+        System.out.println("Teste");
+    }
+   
     //Atributos 
     private int cargaHoraria;
     private char turno;
     private final float VALOR_HORA = 100f;
+    
+    //Inicializando estruturas de classe
+    static {
+        Date dataAtual = new Date();
+        int nro_instancias = 0;
+    }
     
      //Metodo construtor
     public Curso(int p_codigo, String p_nome, 
@@ -63,4 +74,17 @@ public class Curso extends Produto{
         System.out.println("Instância sendo coletada pelo GC");
     }
     
+    public void getCurso(){
+        String texto_retorno = 
+                "Código Curso: " + super.getCodigo() + "\n"
+              + "Nome Curso: " + super.getNome() + "\n"
+              + "Carga Horária: " + this.getCargaHoraria() + "\n"
+              + "Quantidade: " + super.getQuantidade() + "\n"
+              + "Turno do Curso: " + this.getTurno() ;
+        
+        System.out.println(texto_retorno);
+                
+    }
+    
+   
 }
