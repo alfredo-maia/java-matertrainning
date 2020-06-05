@@ -1,24 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.social.estoque;
 
 /**
  *
- * @author alfredo
+ * @author Alfredo
  */
 public class Produto {
     //Atributo
-    
+   
     private int codigo;
     private String nome;
     private double preco;
     private int quantidade;
     
-    //Metodos guetters seters 
+    //Metodo construtor
     
+    public Produto(){
+        
+    }
+    
+    public Produto(int p_codigo, String p_nome, double p_preco, int p_quantidade){
+        this.codigo = p_codigo;
+        this.nome = p_nome;
+        this.preco = p_preco;
+        this.quantidade = p_quantidade;
+    }
+    
+    //Metodos guetters seters 
     public void setCodigo(int p_codigo){
         this.codigo = p_codigo;
     }
