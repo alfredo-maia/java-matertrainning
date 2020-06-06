@@ -7,7 +7,7 @@ package capitulo5;
  */
 public class Funcionario extends Pessoa{
     //Atributos de Instância 
-    private double salario;
+    protected double salario;
     private char turno;
     
     //Método construtor 

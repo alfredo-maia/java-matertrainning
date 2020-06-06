@@ -94,6 +94,8 @@ public class Capitulo5 {
             DVD dvd = new DVD(120, "MARVEL", 12, "Vingadores END Game", 10, 50);
             
             System.out.println("DVD: " + dvd.getNome() + "Valor Total: " + " Total: " + dvd.getTotal());
+            
+            
     }
     
     
