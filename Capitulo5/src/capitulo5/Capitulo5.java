@@ -2,7 +2,6 @@
 package capitulo5;
 
 /**
- *
  * @author Alfredo
  */
 public class Capitulo5 {
