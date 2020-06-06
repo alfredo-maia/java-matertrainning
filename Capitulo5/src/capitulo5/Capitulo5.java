@@ -52,6 +52,30 @@ public class Capitulo5 {
             System.out.println("---------------------------------");
             System.out.println("Desconto: " + Cliente.getDesconto());
             
+            //Trabalhando com Herança
+            System.out.println("--------------HERANÇA------------");
+            
+            Funcionario func = new Funcionario(10              ,
+                                               "Helen Martins" ,
+                                               "Goiânia"       ,
+                                               "6232898404",
+                                                1255.50        ,
+                                                'M'
+                                                );
+            
+            Fornecedor forn = new Fornecedor(  11              ,
+                                               "João Marcos" ,
+                                               "Ap. de Goiânia"       ,
+                                               "623288974",
+                                                "J"        ,
+                                                10000
+                                                );
+            
+            System.out.println("########### Funcionário ##############");
+            System.out.println("Dados do Funcionário: \n" + func.getPessoa());
+            System.out.println("########### Fornecedor ##############");
+            System.out.println("Dados do Fornecedor: \n" + forn.getPessoa());
+
             
     }
     
