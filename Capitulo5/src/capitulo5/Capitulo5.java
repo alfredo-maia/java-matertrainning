@@ -75,8 +75,25 @@ public class Capitulo5 {
             System.out.println("Dados do Funcionário: \n" + func.getPessoa());
             System.out.println("########### Fornecedor ##############");
             System.out.println("Dados do Fornecedor: \n" + forn.getPessoa());
-
             
+            System.out.println("----------------------------------------------");
+            Produto pro1 = new Produto();
+            pro1.setPreco(10);
+            pro1.setQuantidade(7);
+            
+            System.out.println("Preco: " + pro1.getPreco());
+            System.out.println("Quantidade: " + pro1.getQuantidade());
+            System.out.println("Total: " + pro1.getTotal());
+            
+            System.out.println("-----------------------------------------------");
+            
+            CD cd = new CD(120, "DC", 12, "CD do Batman", 52, 25);
+            
+            System.out.println("CD: " + cd.getNome() + " Valor Total: " + cd.getTotal());
+          
+            DVD dvd = new DVD(120, "MARVEL", 12, "Vingadores END Game", 10, 50);
+            
+            System.out.println("DVD: " + dvd.getNome() + "Valor Total: " + " Total: " + dvd.getTotal());
     }
     
     
