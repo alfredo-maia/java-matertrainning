@@ -89,13 +89,17 @@ public class Capitulo5 {
             
             CD cd = new CD(120, "DC", 12, "CD do Batman", 52, 25);
             
+            CD cd2 = new CD(125,"Nandi",54,"Bruna Martins",20,10);
+            
             System.out.println("CD: " + cd.getNome() + " Valor Total: " + cd.getTotal());
           
             DVD dvd = new DVD(120, "MARVEL", 12, "Vingadores END Game", 10, 50);
             
             System.out.println("DVD: " + dvd.getNome() + "Valor Total: " + " Total: " + dvd.getTotal());
             
+            System.out.println("\n-----------VARARGS-----------------\n");
             
+            CD.getVars(cd2,cd);
     }
     
     
