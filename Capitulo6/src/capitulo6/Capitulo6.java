@@ -1,5 +1,8 @@
 package capitulo6;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /**
  *
  * @author alfre
@@ -138,7 +141,50 @@ public class Capitulo6 {
            
            prod[0] = new Produto(1,"PC",2000.0);
           
-          System.out.println(prod[0]);
+           System.out.println(prod[0]);
+           
+           //Coleções
+           ArrayList lista = new ArrayList();
+           lista.add("Java");
+           lista.add("Oracle");
+           lista.add("JavaScript");
+          System.out.println("Lista: " + lista.get(1));
+          //Imprimindo a lista toda
+          System.out.println("Lista Completa: \n" + lista);
+          //Removendo do ArrayList
+          lista.remove(2);
+          System.out.println("Lista Completa: \n" + lista);
+          
+          //Exemplo de iterator
+          /*
+                hasNext - Pergunta se tá no fim
+                next    - Vai para o próximo
+          */
+          Iterator it = lista.iterator();
+          
+          while(it.hasNext()){
+              String s2 = (String) it.next();
+              System.out.println("Iterator: " + s2);
+          }
+          
+          //Exemplo com ForEach
+          
+          for(Object obj : lista){
+              System.out.println("Foreach: " + obj);
+          }
+          
+          //ArrayList Específico
+          ArrayList<Aluno> alunos = new ArrayList();
+          alunos.add(new Aluno(1,"Alfredo"));
+          alunos.add(new Aluno(2,"Jorge"));
+          alunos.add(new Aluno(3,"Maria"));
+          alunos.add(new Aluno(4,"Kerolen"));
+          
+          //Imprimindo Alunos
+          System.out.println("Objeto 1: " + alunos.get(1).getNome());
+          
+          System.out.println("Lista Completa: " + alunos);
+          
     }
     
 }
