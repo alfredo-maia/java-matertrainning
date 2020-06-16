@@ -134,11 +134,11 @@ public class Capitulo6 {
           System.out.println("Nums: " + nums[1][1]);
           
           //Array de Objetos
-          Produto prod;
+           Produto prod[] = new Produto[10];
+           
+           prod[0] = new Produto(1,"PC",2000.0);
           
-          //prod[0] = new Produto(1,"PC",2000.0);
-          
-          //System.out.println(prod);
+          System.out.println(prod[0]);
     }
     
 }
