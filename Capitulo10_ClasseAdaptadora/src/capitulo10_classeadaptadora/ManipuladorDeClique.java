@@ -9,6 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.event.MouseAdapter;
+
  
 //Queremos apenas o manipulador mouseClick
 //por isso usamos um adaptador para evitar a necessidade
